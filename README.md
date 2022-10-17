@@ -15,9 +15,21 @@ cd nutch
 ```
 
 ant 를 사용하여 빌드해주자. dependency 들은 ant 가 `build.xml` 을 읽어 알아서 해준다.  
+아래 명령어를 실행하면 `build.xml` 에 default target 으로 기재된 `ant runtime` 이 실행된다:  
 ``` shell
 ant
 ```
+
+혹은:  
+``` shell
+ant runtime
+```
+
+#### IntelliJ 로 빌드할 시 (Linux)
+1. File > Project Structure >> Project Settings > Project 에서 SDK 설정해주자.
+2. Ant, ivyIDEA 플러그인 설치해주자.
+3. target 중 runtime 을 실행시켜주자.
+
 
 ### 1-3. Nutch 실행하고 실행가능한 메뉴 보기
 아래와 같이 Nutch 를 단순실행하면, 실행가능한 메뉴들의 목록 및 간단한 설명을 볼 수 있다.  
